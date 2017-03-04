@@ -84,6 +84,7 @@ let mapleader = ','
 let g:mapleader = ','
 
 nnore <leader><CR> :noh<CR>
+inoremap jj <ESC>
 
 set mousehide
 set ruler
