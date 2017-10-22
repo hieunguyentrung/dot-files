@@ -86,6 +86,11 @@ let g:mapleader = ','
 nnore <leader><CR> :noh<CR>
 inoremap jj <ESC>
 
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
 set mousehide
 set ruler
 set number
@@ -108,7 +113,4 @@ let g:gruvbox_italic=1
 colorscheme gruvbox
 set background=dark
 
-let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\.git$\|\.yardoc\|public$|log\|tmp$',
-  \ 'file': '\.so$\|\.dat$|\.DS_Store$'
-  \ }
+let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn|DS_Store))$'
