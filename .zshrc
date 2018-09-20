@@ -1,3 +1,5 @@
+export EDITOR=vim
+
 alias gc.="git checkout ."
 alias gcm="git checkout master"
 alias gcb="git checkout -b"
