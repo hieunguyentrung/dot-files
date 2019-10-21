@@ -1,4 +1,4 @@
-alias gc.="git checkout ."
+alias gcf="git checkout -f"
 alias rs="rails s"
 alias rc="rails c"
 alias rcs="rails c -s"
