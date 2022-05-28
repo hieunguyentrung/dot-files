@@ -53,7 +53,7 @@ set statusline +=%y                          " filetype
 set statusline +=%=%-14.(%l,%c%V%)           " Line, column-virtual column"
 set statusline +=\ %P]"
 function! StatusGitBranch()
-  let b:s_git_branch_name = fugitive#head()
+  let b:s_git_branch_name = FugitiveHead()
   if !empty(b:s_git_branch_name)
     return " ← ".b:s_git_branch_name
   else
